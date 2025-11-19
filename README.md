@@ -6,12 +6,6 @@ First, run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
@@ -102,7 +96,7 @@ https://github.com/users/douglasgreyling/projects/1/views/1
 ## Technology Stack
 
 - **Front-End:** HTML, CSS, JavaScript, Next.js
-- **Back-End:** Node.js, database (SQLite)
+- **Back-End:** Node.js, database (PostgreSQL)
 - **Project Management:** GitHub Boards
 - **Code Management:** Git, GitHub Repository
 - **Deployment / Cloud Platform:** Vercel
