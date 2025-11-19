@@ -68,7 +68,7 @@ Open your web browser and go to: **http://localhost:3000**
 
 If at any point you need to stop the application, return to your terminal and press `CTRL + C`.
 
-## 🛠️ Development Commands
+## Development Commands
 
 ### Starting the Application
 ```bash
