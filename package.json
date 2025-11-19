@@ -3,11 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "prisma generate && node prisma/seed.js && next dev",
+    "dev": "prisma generate && npx prisma migrate dev && node prisma/seed.js && next dev",
     "build": "prisma generate && next build",
     "start": "next start",
     "lint": "eslint",
-    "seed": "node prisma/seed.js"
+    "seed": "node prisma/seed.js",
+    "migrate": "npx prisma migrate dev"
   },
   "dependencies": {
     "@heroicons/react": "^2.2.0",

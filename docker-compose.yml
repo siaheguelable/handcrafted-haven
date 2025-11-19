@@ -28,5 +28,21 @@ services:
     depends_on:
       - db
 
+  prisma-studio:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: unless-stopped
+    environment:
+      DATABASE_URL: postgresql://postgres:postgres@db:5432/handcrafted_haven
+    ports:
+      - "5555:5555"
+    volumes:
+      - .:/app
+      - /app/node_modules
+    depends_on:
+      - db
+    command: ["npx", "prisma", "studio", "--hostname", "0.0.0.0"]
+
 volumes:
   postgres_data:
